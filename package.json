@@ -1,6 +1,6 @@
 {
   "name": "@create-mastery/cli",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "The official Create Website CLI, created to enhance the DX",
   "homepage": "https://github.com/Create-Mastery/cli#readme",
   "repository": {
