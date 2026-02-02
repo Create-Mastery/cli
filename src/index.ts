@@ -1,4 +1,4 @@
-#!/usr/bin/env tsx
+#!/usr/bin/env node
 
 import { execSync } from 'node:child_process'
 import { readFileSync } from 'node:fs'
@@ -8,13 +8,13 @@ import chalk from 'chalk'
 import { program } from 'commander'
 import gradient from 'gradient-string'
 import type { PackageJson } from 'type-fest'
-import addComponent from './commands/add/component'
-import addLanguage from './commands/add/language'
-import { genSchema } from './commands/generate-schema'
-import printScripts from './commands/scripts'
-import printVersion from './commands/version'
-import { createMasteryASCIIArtBig } from './utils/arts'
-import { requireProjectRoot } from './utils/require-project-root'
+import addComponent from './commands/add/component.js'
+import addLanguage from './commands/add/language.js'
+import { genSchema } from './commands/generate-schema.js'
+import printScripts from './commands/scripts.js'
+import printVersion from './commands/version.js'
+import { createMasteryASCIIArtBig } from './utils/arts.js'
+import { requireProjectRoot } from './utils/require-project-root.js'
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
@@ -22,7 +22,7 @@ const __dirname = path.dirname(__filename)
 const add = program.command('add').description('add a language or component')
 const gen = program.command('gen').description('generate the dictionary schema')
 
-const cliPackagePath = path.resolve(__dirname, './package.json')
+const cliPackagePath = path.resolve(__dirname, '../package.json')
 
 const cliInfo: PackageJson = JSON.parse(readFileSync(cliPackagePath, 'utf-8'))
 

@@ -1,6 +1,6 @@
 import chalk from 'chalk'
 import type { PackageJson } from 'type-fest'
-import { createMasteryASCIIArtSmall } from '../utils/arts'
+import { createMasteryASCIIArtSmall } from '../utils/arts.js'
 
 export default function printScripts(siteInfo: PackageJson) {
   console.log(chalk.blue(createMasteryASCIIArtSmall))

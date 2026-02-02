@@ -1,5 +1,5 @@
 import chalk from 'chalk'
-import { findProjectRoot } from './find-project-root'
+import { findProjectRoot } from './find-project-root.js'
 
 export function requireProjectRoot(): string {
   const root = findProjectRoot()

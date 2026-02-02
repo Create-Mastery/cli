@@ -3,7 +3,7 @@ import path from 'node:path'
 import chalk from 'chalk'
 import { globSync } from 'glob'
 import type { PackageJson } from 'type-fest'
-import { createMasteryASCIIArtSmall } from '../utils/arts'
+import { createMasteryASCIIArtSmall } from '../utils/arts.js'
 
 export default function printVersion(
   verbose: boolean,
