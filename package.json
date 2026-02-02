@@ -10,9 +10,9 @@
   "license": "GPL-3.0-only",
   "author": "Create Mastery",
   "type": "module",
-  "main": "./index.ts",
+  "main": "./src/index.ts",
   "bin": {
-    "cm": "index.ts"
+    "cm": "src/index.ts"
   },
   "dependencies": {
     "chalk": "^5.6.2",
