@@ -9,10 +9,7 @@ the Create Mastery website.
 
 ## Installation
 
-You need `tsx` to run the CLI:
-
 ```sh
-npm install -g tsx
 npm install -g @create-mastery/cli
 ```
 
